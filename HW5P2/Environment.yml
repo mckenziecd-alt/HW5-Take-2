@@ -1,5 +1,5 @@
-Name: AI.ML.HW5P2
-Channels:
+name: AI.ML.HW5P2
+channels:
   - defaults
   - conda-forge
 dependencies:
