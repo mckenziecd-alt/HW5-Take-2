@@ -16,8 +16,9 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Load dataset
-path = r"C:\Users\d0m1n\Desktop\VSCode\AI.ML.ENGR\AI.ML_HW5P2\HW5P2\Model_Evaluations\Lipophilicity.csv"
-df = pd.read_csv(path)
+dir_path = os.path.dirname(os.path.realpath(__file__))
+#path = r"C:\Users\d0m1n\Desktop\VSCode\AI.ML.ENGR\AI.ML_HW5P2\HW5P2\Model_Evaluations\Lipophilicity.csv"
+df = pd.read_csv(os.path.join(dir_path, "Lipophilicity.csv"))
 df.head()
 
 # Label Columns
